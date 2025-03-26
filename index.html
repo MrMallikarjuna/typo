@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallikarjuna - The Rockers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        padding-top: 56px;
+      }
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://source.unsplash.com/random/1920x1080/?design") no-repeat
+            center center;
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 30px;
+      }
+      .masonry {
+        column-count: 3;
+        column-gap: 1em;
+      }
+      .masonry-item {
+        display: inline-block;
+        margin: 0 0 1em;
+        width: 100%;
+        break-inside: avoid;
+      }
+      @media (max-width: 768px) {
+        .masonry {
+          column-count: 2;
+        }
+      }
+      @media (max-width: 576px) {
+        .masonry {
+          column-count: 1;
+        }
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .carousel-inner img {
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+  }
+</style> 
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The Rockers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#typography">Typography & Scripts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#graphic-design"
+                >Graphic Design Showcase</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">Tools & Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container-fluid p-0">
+      <!-- Carousel -->
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="topography.jpg" class="d-block w-100" alt="Typography" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beautiful Typography</h5>
+              <p>Explore our collection of stunning fonts and scripts</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="design.jpg" class="d-block w-100" alt="Design" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Creative Designs</h5>
+              <p>Discover inspiring graphic design examples</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="tools.jpg" class="d-block w-100" alt="Tools" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Essential Tools</h5>
+              <p>Find the best resources for your creative projects</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section text-center">
+        <div class="container">
+          <h1 class="display-4">Welcome to Mallikarjuna - The Rockers</h1>
+          <p class="lead">
+            Your ultimate resource for typography, graphic design, and creative
+            tools
+          </p>
+          <a href="#typography" class="btn btn-primary btn-lg mt-3"
+            >Explore Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography" class="container py-5">
+      <h2 class="text-center mb-5">Typography & Scripts</h2>
+
+      <!-- Cards -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="serif.jpg"
+              class="card-img-top"
+              alt="Serif Fonts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Serif Fonts</h5>
+              <p class="card-text">
+                Classic and elegant typefaces with serifs that convey tradition
+                and reliability.
+              </p>
+              <a href="#" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="sanserif.jpg"
+              class="card-img-top"
+              alt="Sans-Serif Fonts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sans-Serif Fonts</h5>
+              <p class="card-text">
+                Clean, modern typefaces without serifs that offer a minimalist
+                aesthetic.
+              </p>
+              <a href="#" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="script.jpg"
+              class="card-img-top"
+              alt="Script Fonts"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Script Fonts</h5>
+              <p class="card-text">
+                Elegant, flowing typefaces that mimic handwriting for a personal
+                touch.
+              </p>
+              <a href="#" class="btn btn-primary">View Collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mt-5" id="typographyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="popular-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#popular"
+            type="button"
+            role="tab"
+          >
+            Popular
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="new-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#new"
+            type="button"
+            role="tab"
+          >
+            New Releases
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="free-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#free"
+            type="button"
+            role="tab"
+          >
+            Free Fonts
+          </button>
+        </li>
+      </ul>
+      <div
+        class="tab-content p-3 border border-top-0 rounded-bottom mb-5"
+        id="typographyTabsContent"
+      >
+        <div class="tab-pane fade show active" id="popular" role="tabpanel">
+          <h4>Most Popular Fonts</h4>
+          <p>
+            Helvetica, Times New Roman, Garamond, Futura, Bodoni - these
+            timeless classics continue to dominate design projects across the
+            globe.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="new" role="tabpanel">
+          <h4>New Releases</h4>
+          <p>
+            Discover our latest additions: NeoGrotesk, Vintage Script Pro,
+            Modernist Sans, and more cutting-edge typefaces for contemporary
+            designs.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="free" role="tabpanel">
+          <h4>Free Fonts</h4>
+          <p>
+            High-quality free fonts for your projects: Open Sans, Roboto, Lato,
+            Montserrat, and many others available for commercial use.
+          </p>
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="accordion" id="typographyAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Typography Basics
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#typographyAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Typography is the art and technique of arranging type to make
+                written language legible, readable, and appealing when
+                displayed. Key elements include:
+              </p>
+              <ul>
+                <li>
+                  <strong>Typefaces vs Fonts:</strong> A typeface is a design
+                  style (like Helvetica), while a font is a specific
+                  implementation (like Helvetica Bold 12pt).
+                </li>
+                <li>
+                  <strong>Kerning:</strong> The space between individual letter
+                  pairs.
+                </li>
+                <li>
+                  <strong>Leading:</strong> The vertical space between lines of
+                  text.
+                </li>
+                <li>
+                  <strong>Tracking:</strong> The uniform spacing between all
+                  characters in a word.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              Choosing the Right Font
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#typographyAccordion"
+          >
+            <div class="accordion-body">
+              <p>Selecting the appropriate font depends on several factors:</p>
+              <ol>
+                <li>
+                  <strong>Purpose:</strong> Formal documents need different
+                  fonts than creative projects.
+                </li>
+                <li>
+                  <strong>Audience:</strong> Consider readability for your
+                  target demographic.
+                </li>
+                <li>
+                  <strong>Medium:</strong> Screen vs print fonts have different
+                  requirements.
+                </li>
+                <li>
+                  <strong>Brand Identity:</strong> Fonts should align with your
+                  brand personality.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              Font Pairing Tips
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#typographyAccordion"
+          >
+            <div class="accordion-body">
+              <p>Effective font combinations create visual harmony:</p>
+              <ul>
+                <li>Pair a serif with a sans-serif for contrast</li>
+                <li>Limit to 2-3 fonts per project</li>
+                <li>
+                  Ensure sufficient contrast between heading and body fonts
+                </li>
+                <li>
+                  Consider using different weights of the same font family
+                </li>
+                <li>Test readability at various sizes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Graphic Design Section -->
+    <section id="graphic-design" class="container py-5 bg-light">
+      <h2 class="text-center mb-5">Graphic Design Showcase</h2>
+
+      <!-- Grid -->
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="logo.jpg"
+              class="card-img-top"
+              alt="Logo Design"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Logo Design</h5>
+              <p class="card-text">
+                Collection of innovative and memorable logo designs for
+                inspiration.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="poster.jpg"
+              class="card-img-top"
+              alt="Poster Design"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Poster Design</h5>
+              <p class="card-text">
+                Creative poster layouts and compositions for various events.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="packing.jpg"
+              class="card-img-top"
+              alt="Packaging Design"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Packaging Design</h5>
+              <p class="card-text">
+                Innovative product packaging that stands out on shelves.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="branding.jpg"
+              class="card-img-top"
+              alt="Branding"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brand Identity</h5>
+              <p class="card-text">
+                Complete brand systems with consistent visual language.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="web.jpg"
+              class="card-img-top"
+              alt="Web Design"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">
+                Modern website layouts with excellent user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img
+              src="illustration.jpg"
+              class="card-img-top"
+              alt="Illustration"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Illustration</h5>
+              <p class="card-text">
+                Artistic illustrations for various media applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Masonry Layout -->
+      <h3 class="text-center mb-4">Design Inspiration Gallery</h3>
+      <div class="masonry">
+        <div class="masonry-item">
+          <video
+            src="design1.mp4"
+            class="img-fluid rounded mb-3"
+            alt="Design 1"
+          />
+        </div>
+        <div class="masonry-item">
+          <video
+          src="design2.mp4"
+
+            class="img-fluid rounded mb-3"
+            alt="Design 2"
+          />
+        </div>
+        <div class="masonry-item">
+          <video
+            src="design3.mp4"
+            class="img-fluid rounded mb-3"
+            alt="Design 3"
+          />
+        </div>
+        <div class="masonry-item">
+          <video
+            src="design4.mp4"
+            class="img-fluid rounded mb-3"
+            alt="Design 4"
+          />
+        </div>
+        <div class="masonry-item">
+          <video
+            src="design5.mp4"
+            class="img-fluid rounded mb-3"
+            alt="Design 5"
+          />
+        </div>
+        <div class="masonry-item">
+          <video
+            src="design6.mp4"
+            class="img-fluid rounded mb-3"
+            alt="Design 6"
+          />
+        </div>
+      </div>
+
+      <!-- Design Carousel -->
+      <div
+        id="designCarousel"
+        class="carousel slide mt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#designCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#designCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#designCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="minimal.jpg"
+              class="d-block w-100"
+              alt="Minimal Design"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"
+            >
+              <h5>Minimalist Design</h5>
+              <p>Less is more - clean and simple design aesthetics</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="retro.jpg"
+              class="d-block w-100"
+              alt="Retro Design"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"
+            >
+              <h5>Retro Style</h5>
+              <p>Nostalgic designs from past decades</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="futuristic.jpg"
+              class="d-block w-100"
+              alt="Futuristic Design"
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"
+            >
+              <h5>Futuristic Concepts</h5>
+              <p>Forward-thinking design approaches</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#designCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#designCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tools & Resources Section -->
+    <section id="tools" class="container py-5">
+      <h2 class="text-center mb-5">Tools & Resources</h2>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+        <button type="button" class="btn btn-primary">Design Software</button>
+        <button type="button" class="btn btn-secondary">Font Resources</button>
+        <button type="button" class="btn btn-success">Color Tools</button>
+        <button type="button" class="btn btn-danger">Templates</button>
+        <button type="button" class="btn btn-warning">Stock Photos</button>
+        <button type="button" class="btn btn-info">Inspiration</button>
+        <button type="button" class="btn btn-dark">Tutorials</button>
+        <button type="button" class="btn btn-light">Freebies</button>
+      </div>
+
+      <!-- Alerts -->
+      <div class="alert alert-primary" role="alert">
+        <strong>Pro Tip:</strong> Always check the license before using any
+        resource in commercial projects.
+      </div>
+      <div class="alert alert-success" role="alert">
+        <strong>New Update:</strong> We've added 50+ new free fonts to our
+        collection this month!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        <strong>Warning:</strong> Some free resources may require attribution.
+        Always read the terms.
+      </div>
+
+      <!-- Tools Cards -->
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Adobe Creative Cloud</h5>
+              <p class="card-text">
+                Industry-standard design software including Photoshop,
+                Illustrator, and InDesign.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#adobeModal"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Figma</h5>
+              <p class="card-text">
+                Collaborative interface design tool with powerful prototyping
+                features.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#figmaModal"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Google Fonts</h5>
+              <p class="card-text">
+                Free, open-source fonts optimized for the web with easy
+                implementation.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#googleFontsModal"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div class="modal fade" id="adobeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Adobe Creative Cloud</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Adobe Creative Cloud is a collection of 20+ desktop and mobile
+                apps and services for photography, design, video, web, UX, and
+                more. Popular apps include:
+              </p>
+              <ul>
+                <li>Photoshop - Image editing and compositing</li>
+                <li>Illustrator - Vector graphics and illustration</li>
+                <li>InDesign - Page layout and publishing</li>
+                <li>Premiere Pro - Video editing</li>
+                <li>After Effects - Motion graphics and visual effects</li>
+              </ul>
+              <p>
+                Subscription plans start at $9.99/month for individual apps.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Visit Website
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="figmaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Figma</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Figma is a collaborative web application for interface design,
+                with additional offline features enabled by desktop
+                applications. Key features include:
+              </p>
+              <ul>
+                <li>Real-time collaboration with team members</li>
+                <li>Vector networks for flexible design</li>
+                <li>Powerful prototyping tools</li>
+                <li>Design systems with shared components</li>
+                <li>Plugins for extended functionality</li>
+              </ul>
+              <p>
+                Figma offers free plans for individuals and paid plans for
+                teams.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Visit Website
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="googleFontsModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Google Fonts</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Google Fonts is a library of 1,000+ free licensed font families
+                and APIs for convenient use via CSS and Android. Benefits
+                include:
+              </p>
+              <ul>
+                <li>All fonts are open source and free for commercial use</li>
+                <li>Optimized for fast loading on websites</li>
+                <li>Easy integration with just a few lines of code</li>
+                <li>Wide selection of font styles and languages</li>
+                <li>No registration or account required</li>
+              </ul>
+              <p>
+                Popular Google Fonts include Roboto, Open Sans, Lato,
+                Montserrat, and Poppins.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Visit Website
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5 bg-light">
+      <h2 class="text-center mb-5">Contact Us</h2>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <!-- Contact Form -->
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select class="form-select" id="subject">
+                <option selected>Choose a subject</option>
+                <option value="1">General Inquiry</option>
+                <option value="2">Typography Questions</option>
+                <option value="3">Design Services</option>
+                <option value="4">Feedback</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="newsletter" />
+              <label class="form-check-label" for="newsletter"
+                >Subscribe to our newsletter</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <!-- Social Media Links -->
+          <h4 class="mb-4">Connect With Us</h4>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="#"
+              class="btn btn-outline-primary d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-info d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-twitter"></i> Twitter
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-danger d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-secondary d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-dark d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-success d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="mt-5">
+            <h4>Our Office</h4>
+            <address>
+              <strong>Mallikarjuna - The Rockers</strong><br />
+              123 Design Street<br />
+              Creative City, CC 12345<br />
+              <i class="bi bi-telephone"></i> (123) 456-7890<br />
+              <i class="bi bi-envelope"></i> info@mallikarjunatherockers.com
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>About Us</h5>
+            <p>
+              Mallikarjuna - The Rockers is a creative resource hub for
+              designers, providing typography resources, design inspiration, and
+              essential tools.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-white">Home</a></li>
+              <li><a href="#typography" class="text-white">Typography</a></li>
+              <li>
+                <a href="#graphic-design" class="text-white">Graphic Design</a>
+              </li>
+              <li><a href="#tools" class="text-white">Tools</a></li>
+              <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Newsletter</h5>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; 2023 Mallikarjuna - The Rockers. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
